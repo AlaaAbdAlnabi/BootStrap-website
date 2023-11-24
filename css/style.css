@@ -1,0 +1,590 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ebedf1 ;
+    color: #04515f !important;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+a{
+    text-decoration: none;
+    color: #fa0909 !important;
+}
+a:hover{
+    color: rgb(240, 10, 10) !important;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    height: 80px;
+}
+
+.navbar-title{
+    background: -webkit-linear-gradient(top,white,black,red,green,white);
+    font-size: 22px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+
+}
+
+.navbar-title:hover{
+   text-shadow:  5px 5px 20px rgb(0, 0, 0), -5px -5px 20px rgb(0, 0, 0);
+   /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+}
+
+.nav-link:hover{
+    text-shadow: 1px 1px 10px  rgb(9, 239, 25), -1px -1px 10px rgb(247, 8, 8);
+    font-weight: bolder;
+}
+
+.nav-link:hover::first-letter{
+    font-size: larger;
+    color: rgb(0, 0, 0);
+
+}
+
+.dropdown-item{
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+
+.navbtn:hover{
+    opacity: 0.7;
+}
+
+/* carsoul */
+
+.carousel-inner h1{
+    text-shadow: 1px 1px 5px #0b0b0b;
+}
+
+.carousel-caption{
+    background-color: rgba(55, 58, 53, 0.5);
+    border-radius: 10px;
+}
+
+/* /carsoul */
+
+/* card-1 */
+
+.card-body h5, title{
+    background: -webkit-linear-gradient(top,black,black);
+    font-size: 19px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+}
+
+.card-body .btn:hover{
+    opacity: 0.7;
+}
+/* /card(1) */
+
+/* Accordion */
+
+.accordion-button{
+    background: -webkit-linear-gradient(top,black,red,green,white);
+    text-transform: uppercase;
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* /Accordion */
+
+/* fixed-img */
+.fixed-img{
+    background-image: url(../img/roman-theatre-amman.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* /fixed-img */
+
+/* tours */
+
+.destination-title{
+
+    background: -webkit-linear-gradient(top,black,red,green,white);
+    font-weight: bolder;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+
+}
+
+.thanks-title{
+
+  background: -webkit-linear-gradient(top,black,white,white,white);
+  font-weight: bolder;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+
+}
+
+.destination-card{
+    position: absolute;
+    z-index: 20;
+    bottom: 75px;
+    right: 13px;
+}
+
+.cardoverlay{
+    position: relative;
+    min-height: 200px;
+}
+.cardoverlay::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    background-color: black;
+    opacity: 0.3;
+    transition: 1s;
+}
+
+.cardoverlay:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.cardoverlay::before{
+    content: "";
+    position: absolute;
+    z-index: 6;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 0%;
+    background-color: black;
+    opacity: 0.3;
+    transition: 1s;
+}
+
+.cardoverlay:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+/* /tours */
+
+
+.card-imge{ 
+    border: solid 1px black;
+    border-radius: 20px;
+    height: 450px;
+    background-image: url(../img/Kayla-Person.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 12px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+    margin: 5%;
+}
+
+.overlay{
+    border: 1px;
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(90deg, rgba(35, 79, 109, 0.3785889356) 0%, #455f71 100%);
+}
+
+
+.card-parent, .card-img-overlay{
+    transition: 0.3s;
+}
+
+.card-parent:hover{
+    transform: scale(90%, 90%);
+}
+
+.card-img-overlay:hover{
+    transform: scale(87%, 87%);
+}
+
+.media{
+    margin-top: 150px;
+    
+}
+
+/* postcard */
+.postcard {
+    height: 400px;
+    flex-wrap: wrap;
+    display: flex;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    box-shadow: -5px 5px 20px 10px rgb(201, 198, 241);
+  }
+  .postcard.dark {
+    background-color: #18151f;
+  }
+  .postcard.light {
+    background-color: #e1e5ea;
+  }
+  .postcard .t-dark {
+    color: #18151f;
+  }
+  .postcard a {
+    color: inherit;
+  }
+  .postcard h1, .postcard .h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .postcard .small {
+    font-size: 80%;
+  }
+  .postcard .postcard__title {
+    font-size: 1.75rem;
+  }
+  .postcard .postcard__img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  .postcard .postcard__img_link {
+    display: contents;
+  }
+  .postcard .postcard__bar {
+    width: 50px;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #424242;
+    transition: width 0.2s ease;
+  }
+  .postcard .postcard__text {
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .postcard .postcard__preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    height: 100%;
+  }
+  .postcard .postcard__tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    padding: 0;
+    justify-content: center;
+  }
+  .postcard .postcard__tagbox .tag__item {
+    display: inline-block;
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 3px;
+    padding: 2.5px 10px;
+    margin: 0 5px 5px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: background-color 0.5s;
+  }
+  .postcard .postcard__tagbox .tag__item:hover {
+    background: rgba(83, 83, 83, 0.8);
+  }
+  .postcard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #424242, transparent 50%);
+    opacity: 1;
+    border-radius: 10px;
+  }
+  .postcard:hover .postcard__bar {
+    width: 100px;
+  }
+  
+  @media screen and (min-width: 769px) {
+    .postcard {
+      flex-wrap: inherit;
+    }
+    .postcard .postcard__title {
+      font-size: 2rem;
+    }
+    .postcard .postcard__tagbox {
+      justify-content: start;
+    }
+    .postcard .postcard__img {
+      max-width: 300px;
+      max-height: 100%;
+      transition: transform 0.3s ease;
+    }
+    .postcard .postcard__text {
+      padding: 3rem;
+      width: 100%;
+    }
+    .postcard .media.postcard__text:before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: #18151f;
+      top: -20%;
+      height: 130%;
+      width: 55px;
+    }
+    .postcard:hover .postcard__img {
+      transform: scale(1.1);
+    }
+    .postcard:nth-child(2n+1) {
+      flex-direction: row;
+    }
+    .postcard:nth-child(2n+0) {
+      flex-direction: row-reverse;
+    }
+    .postcard:nth-child(2n+1) .postcard__text::before {
+      left: -12px !important;
+      transform: rotate(4deg);
+    }
+    .postcard:nth-child(2n+0) .postcard__text::before {
+      right: -12px !important;
+      transform: rotate(-4deg);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .postcard__text {
+      padding: 2rem 3.5rem;
+    }
+  
+    .postcard__text:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -20%;
+      height: 130%;
+      width: 55px;
+    }
+  
+    .postcard.light .postcard__text:before {
+      background: #e1e5ea;
+    }
+  }
+  /* COLORS */
+  .postcard .postcard__tagbox .green.play:hover {
+    background: #79dd09;
+    color: black;
+  }
+  
+  .green .postcard__title:hover {
+    color: #79dd09;
+  }
+  
+  .green .postcard__bar {
+    background-color: #79dd09;
+  }
+  
+  .green::before {
+    background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+  }
+  
+  .green:nth-child(2n)::before {
+    background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+  }
+  
+  .postcard .postcard__tagbox .blue.play:hover {
+    background: #0076bd;
+  }
+  
+  .blue .postcard__title:hover {
+    color: #0076bd;
+  }
+  
+  .blue .postcard__bar {
+    background-color: #0076bd;
+  }
+  
+  .blue::before {
+    background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+  }
+  
+  .blue:nth-child(2n)::before {
+    background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+  }
+  
+  .postcard .postcard__tagbox .red.play:hover {
+    background: #bd150b;
+  }
+  
+  .red .postcard__title:hover {
+    color: #bd150b;
+  }
+  
+  .red .postcard__bar {
+    background-color: #bd150b;
+  }
+  
+  .red::before {
+    background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+  }
+  
+  .red:nth-child(2n)::before {
+    background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+  }
+  
+  .postcard .postcard__tagbox .yellow.play:hover {
+    background: #bdbb49;
+    color: black;
+  }
+  
+  .yellow .postcard__title:hover {
+    color: #bdbb49;
+  }
+  
+  .yellow .postcard__bar {
+    background-color: #bdbb49;
+  }
+  
+  .yellow::before {
+    background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+  }
+  
+  .yellow:nth-child(2n)::before {
+    background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+  }
+  
+  @media screen and (min-width: 769px) {
+    .green::before {
+      background-image: linear-gradient(-80deg, rgba(121, 221, 9, 0.1), transparent 50%);
+    }
+  
+    .green:nth-child(2n)::before {
+      background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
+    }
+  
+    .blue::before {
+      background-image: linear-gradient(-80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+    }
+  
+    .blue:nth-child(2n)::before {
+      background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+    }
+  
+    .red::before {
+      background-image: linear-gradient(-80deg, rgba(189, 21, 11, 0.1), transparent 50%);
+    }
+  
+    .red:nth-child(2n)::before {
+      background-image: linear-gradient(80deg, rgba(189, 21, 11, 0.1), transparent 50%);
+    }
+  
+    .yellow::before {
+      background-image: linear-gradient(-80deg, rgba(189, 187, 73, 0.1), transparent 50%);
+    }
+  
+    .yellow:nth-child(2n)::before {
+      background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
+    }
+  }
+
+   /*card overlay*/
+   .cardover{
+    position: relative;
+    min-height: 450px;
+  }
+  .cardover .btn{
+    position: absolute;
+    z-index:10;
+    bottom: 55px;
+    right: 13px;
+  }
+  .cardover::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #00dbde;
+    opacity: 0.3;
+    transition: 1s;
+
+  }
+  .cardover:hover::after{
+    width: 100%;
+    height: 100%;
+  }
+  .cardover::before{
+    position: absolute;
+    content: "";
+    bottom:  0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: #00dbde;
+    opacity: 0.3;
+    transition: 1s;
+
+  }
+  .cardover:hover::before{
+    width: 100%;
+    height: 100%;
+  }
+
+  .logoicon{
+    height:80px;
+    width: 80px;
+    box-shadow: -3px -3px 20px 10px rgb(201, 198, 241);
+    border-radius: 50%;
+    transition: 1s;
+}
+.logoicon:hover{
+    background-color: #26b8bd;
+    opacity: 0.7;
+    
+
+}
+
+.title{
+    background: -webkit-linear-gradient(top,black,red,green,white);
+    font-size: 22px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+}

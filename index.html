@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css"/>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="height: 80px; opacity: 0.6; top:0px; left: 0px;" >
+        <div class="container-fluid">
+          <input type="image" src="img/logo.jpg" class="rounded-circle mx-3 shadow" alt="Cinque Terre" width="65px" height="65px"> 
+          <a class="navbar-brand text-black navbar-title m-3" href="#" style="border-right:1px solid #ccc; padding-right: 10px; font-weight: bold;">JORDAN</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle text-black border-2 border-black rounded-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu mt-3 fade" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-success" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-success" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider bg-black" /></li>
+                  <li>
+                    <a class="dropdown-item text-success" href="#">Something else here</a>
+                    <a class="dropdown-item text-success" href="#">Something</a>
+                    <a class="dropdown-item text-success" href="#">else </a>
+                    <a class="dropdown-item text-success" href="#">here</a>
+                    <a class="dropdown-item text-success" href="#">More...</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled text-black"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2 ms-4 border-2 border-success rounded-3"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn navbtn bg-black text-white me-3 border-3 rounded-3 shadow-lg" type="submit">
+                Search
+              </button>
+              <button
+                type="button"
+                class="btn navbtn bg-black text-white me-3 border-3 rounded-3 shadow-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header bg-light">
+              <h5 class="modal-title text-black shadow-lg">Login</h5>
+              <button
+                type="button"
+                class="btn-close bg-light"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+  
+            <!-- Modal body -->
+            <div class="modal-body p-4">
+              <div class="m-3">
+                <label for="exampleInputEmail1" class="form-label text-black"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control text-black border-3 border-black rounded-2"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text text-secondary">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="m-3">
+                <label for="exampleInputPassword1" class="form-label text-black"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control text-info border-3 border-black rounded-2"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="m-3 form-check form-switch">
+                <input
+                  type="checkbox"
+                  class="form-check-input bg-success"
+                  id="exampleCheck1"
+                  role="switch"
+                  checked=""
+                />
+                <label class="form-check-label text-black" for="exampleCheck1"
+                  >Remmember me</label
+                >
+              </div>
+               <!-- Modal footer -->
+               <div class="modal-footer d-flex justify-content-between">
+                  <button type="submit" class="btn bg-black text-light">
+                    Submit
+                  </button>
+                  <button
+                    type="button"
+                    class="btn bg-black text-light"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- carousel -->
+    <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="img/Aqaba-5.4.jpg" class="d-block w-100" alt="..." style="height:550px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Aqaba</h1>
+            <p>Some representative.</p>
+            <a class="btn bg-black text-white text-shadow" target="_blank">Vist Us</a> 
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/roman-theatre-amman.jpg" class="d-block w-100" alt="..." style="height:550px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Roman Theatre</h1>
+            <p>Some representative.</p>
+            <a class="btn bg-black text-white text-shadow" target="_blank">Visit Us</a> 
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/top-things-to-do-in-amman.jpg" class="d-block w-100" alt="..." style="height:550px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Amman Citadel</h1>
+            <p>Some representative.</p>
+            <a class="btn bg-black text-white text-shadow" target="_blank">Visit Us</a> 
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/C9QEUs.jpg" class="d-block w-100" alt="..." style="height:550px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Petra Tour</h1>
+            <p>Some representative.</p>
+            <a class="btn bg-black text-white text-shadow " target="_blank">Visit Us</a> 
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- /carousel -->
+   <!-- card (1) -->
+   <section class="card-1">
+   <div class="card w-100 p-3 " style="background-color: rgba(255, 255, 255, 0.5); border-top-left-radius: 0; border-top-right-radius:0;">
+    <div class="card-body">
+      <h5 class="card-title">Welcome</h5>
+      <p class="card-text text-dark">Are you planning to visit Jordan? We offer the ultimate tour in Jordan, covering Amman,
+        Aqaba. From a one day trip to a 10 day dream vacation, we will take care of all your needs. book hotels. 24/7
+        Customer Service. </p>
+      <a href="#" class="btn bg-black text-white btn-lg ">Book</a>
+    </div>
+  </div>
+</section>
+
+  <!-- /card (1) -->
+  <hr>
+
+  <div class="container-fluid mx-auto my-3 border-2 rounded-2 text-center p-5 shadow-lg" style="background-color: #384657; ">
+    <h1 class="text-white text-shadow">My First Bootstrap Page</h1>
+  </div>
+
+  <!--accordion  -->
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header " id="flush-headingOne head1">
+        <button class="accordion-button collapsed shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="font-size: 18px;">
+          Amman city
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body text-dark">Placeholder content for this accordion, which is intended to demonstrate the class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo head2">
+        <button class="accordion-button collapsed shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="font-size: 20px;">
+          Aqaba city
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body text-dark border-info">Placeholder content for this accordion, which is intended to demonstrate the class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree head3">
+        <button class="accordion-button collapsed shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="font-size:22px ;">
+          Irbid city 
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body text-dark">Placeholder content for this accordion, which is intended to demonstrate the class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+  </div>
+  <!-- /accordion -->
+  <hr>
+
+  <div class="container-fluid mx-auto border-2 rounded-2 text-center p-2 shadow-lg" style="background-color: #384657; ">
+    <h1 class="text-light text-shadow">Translate From Arabic To German</h1>
+  </div>
+<!-- card translate 1 -->
+
+<div class="card p-3" style="background-color:rgb(255, 255, 255) ;">
+  <div class="card-body">
+    <h4 class="card-title text-dark text-shadow ">ًWrite and Translate <a href="https://translate.google.com.eg/?hl=en" target="_blank" class="card-link">Press Here</a> </h4>
+    <a href="#" class=" mb-3 btn bg-black text-white border border-2 rounded-2 shadow-lg" style="font-size:20px ;">Copy</a>
+    
+      <textarea class="form-control border border-2 border-black" placeholder="Translate:" id="floatingTextarea2" rows="5"></textarea>
+    
+  </div>
+  </div>
+<!-- /card translate 1 -->
+<hr>
+
+<div class="container-fluid mx-auto border-2 rounded-2 text-center p-2 shadow-lg" style="background-color: #384657; ">
+  <h1 class="text-light text-shadow">Translate From Arabic To Frensh</h1>
+</div>
+<!-- card translate 2 -->
+
+<div class="card p-3" style="background-color:rgb(255, 255, 255) ;">
+<div class="card-body">
+  <h4 class="card-title text-dark text-shadow ">ًWrite and Translate <a href="https://translate.google.com.eg/?hl=en" target="_blank" class="card-link">Press Here</a> </h4>
+  <a href="#" class=" mb-3 btn bg-black text-white border border-2 rounded-2 shadow-lg" style="font-size:20px ;">Copy</a>
+  
+    <textarea class="form-control border border-2 border-black" placeholder="Translate:" id="floatingTextarea2" rows="5"></textarea>
+  
+</div>
+</div>
+<!-- /card translate 2 -->
+
+<hr>
+
+<div class="container-fluid mx-auto border-2 rounded-2 text-center p-2 shadow-lg" style="background-color: #384657; ">
+  <h1 class="text-light text-shadow">Translate From Arabic To English</h1>
+</div>
+<!-- card translate 3 -->
+
+<div class="card p-3" style="background-color:rgb(255, 255, 255) ;">
+  <div class="card-body">
+    <h4 class="card-title text-dark text-shadow ">ًWrite and Translate <a href="https://translate.google.com.eg/?hl=en" target="_blank" class="card-link">Press Here</a> </h4>
+    <a href="#" class=" mb-3 btn bg-black text-white border border-2 rounded-2 shadow-lg" style="font-size:20px ;">Copy</a>
+    
+      <textarea class="form-control border border-2 border-black" placeholder="Translate:" id="floatingTextarea2" rows="5"></textarea>
+    
+  </div>
+  </div>
+<!-- /card translate 3 -->
+<hr>
+<div class="fixed-img"></div>
+
+<!-- tours -->
+<section class="tours">
+  <div class="container-fluid mx-auto  border-2 rounded-3 text-center p-3 shadow-lg" style="background-color: rgb(255, 255, 255);">
+    <h1 class="text-light text-shadow destination-title">POPULAR DESTINATIONS IN JORDAN</h1>
+  </div>
+</section>
+<div class="container-fluid">
+  <div class="row justify-content-around pt-5">
+    <!-- amman card -->
+    <div class="card cardoverlay bg-light shadow-lg text-info col-lg-3 col-md-4 col-sm-6">
+      <img src="img/card.jpg" class="card-img-top shadow w-100 border-2 rounded-2 "  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Petra</h5>
+        <p class="card-text text-dark pt-3">Some quick example text.</p>
+        <a href="#" class="btn bg-black text-light d-block destination-card">Know More</a>
+      </div>
+    </div>
+    <!-- /amman card -->
+
+    <!--jordan card  -->
+    <div class="card cardoverlay bg-light shadow-lg text-info col-lg-3 col-md-4 col-sm-6">
+      <img src="img/card2.jpg" class="card-img-top shadow w-100 border-2 rounded-2 "  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Aqaba</h5>
+        <p class="card-text text-dark pt-3">Some quick example text.</p>
+        <a href="#" class="btn bg-black text-light d-block destination-card">Know More</a>
+      </div>
+    </div>
+    <!-- /jordan card -->
+
+    <!-- irbid card -->
+
+    <div class="card cardoverlay bg-light shadow-lg text-info col-lg-3 col-md-4 col-sm-6">
+      <img src="img/card3.jpg" class="card-img-top shadow w-100 border-2 rounded-2 "  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Jerash</h5>
+        <p class="card-text text-dark pt-3">Some quick example text.</p>
+        <a href="#" class="btn bg-black text-light d-block destination-card">Know More</a>
+      </div>
+    </div>
+    <!-- /irbid card -->
+
+  </div>
+
+  <div class="row justify-content-around pt-5">
+    <!-- amman card -->
+    <div class="card cardoverlay bg-light shadow-lg text-info col-lg-3 col-md-4 col-sm-6">
+      <img src="img/card4.jpg" class="card-img-top shadow w-100 border-2 rounded-2 "  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Wadi Rum</h5>
+        <p class="card-text text-dark pt-3">Some quick example text.</p>
+        <a href="#" class="btn bg-black text-light d-block destination-card">Know More</a>
+      </div>
+    </div>
+    <!-- /amman card -->
+
+    <!--jordan card  -->
+    <div class="card cardoverlay bg-light shadow-lg text-info col-lg-3 col-md-4 col-sm-6">
+      <img src="img/card5.jpg" class="card-img-top shadow w-100 border-2 rounded-2 "  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Amman</h5>
+        <p class="card-text text-dark pt-3">Some quick example text.</p>
+        <a href="#" class="btn bg-black text-light d-block destination-card">Know More</a>
+      </div>
+    </div>
+    <!-- /jordan card -->
+
+    <!-- irbid card -->
+
+    <div class="card cardoverlay bg-light shadow-lg text-info col-lg-3 col-md-4 col-sm-6">
+      <img src="img/card6.jpg" class="card-img-top shadow w-100 border-2 rounded-2 "  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ajloun castle</h5>
+        <p class="card-text text-dark pt-3">Some quick example text.</p>
+        <a href="#" class="btn bg-black text-light d-block destination-card">Know More</a>
+      </div>
+    </div>
+    <!-- /irbid card -->
+
+  </div>
+
+  <div class="row justify-content-around pt-5">
+    <!-- amman card -->
+    <div class="card cardoverlay bg-light shadow-lg text-info col-lg-3 col-md-4 col-sm-6">
+      <img src="img/card7.jpg" class="card-img-top shadow w-100 border-2 rounded-2 "  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Dead Sea</h5>
+        <p class="card-text text-dark pt-3">Some quick example text.</p>
+        <a href="#" class="btn bg-black text-light d-block destination-card">Know More</a>
+      </div>
+    </div>
+    <!-- /amman card -->
+
+    <!--jordan card  -->
+    <div class="card cardoverlay bg-light shadow-lg text-info col-lg-3 col-md-4 col-sm-6">
+      <img src="img/the-boulevard-amman.jpg" class="card-img-top shadow w-100 border-2 rounded-2 "  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Boulevard</h5>
+        <p class="card-text text-dark pt-3">Some quick example text.</p>
+        <a href="#" class="btn bg-black text-light d-block destination-card">Know More</a>
+      </div>
+    </div>
+    <!-- /jordan card -->
+  </div>
+</div>
+<!-- /tours -->
+<div class="fixed-img mt-5"></div>
+<hr>
+<div class="container-fluid border-info border-2 rounded-3 mx-auto my-3 text-center p-3 shadow-lg" style="background-color:#384657;" ">
+  <h1 class="text-light text-shadow thanks-title">Thanks For</h1>
+</div>
+<!-- card overlay -->
+
+<section class="wrapper">
+  <div class="container-fluid">
+    <div class="row">
+  
+      <div class="card-parent col-sm-12 col-md-6 col-lg-4 ">
+        <div class="card  text-white card-imge">
+          <div class="overlay"></div>
+        
+    
+          <div class="card-img-overlay">
+            <h4 class="card-title mt-4 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+            <small><i class="far fa-clock"></i> October 15, 2020</small>
+            <div class="media">
+              <img class="mr-3 rounded-circle" src="img/card.jpg" alt="Generic placeholder image" style="width:100px; border: solid 3px rgba(255, 255, 255, 0.3);">
+              <div class="media-body">
+                <h6 class="my-0 text-white d-block">ُPopular Hotel In Amman</h6>
+                <small>W Amman</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class=" card-parent col-sm-12 col-md-6 col-lg-4">
+        <div class="card shadow-lg text-white card-imge">
+          <div class="overlay"></div>
+        
+    
+          <div class="card-img-overlay">
+            <h4 class="card-title mt-4 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+            <small><i class="far fa-clock"></i> October 15, 2020</small>
+            <div class="media">
+              <img class="mr-3 rounded-circle" src="img/card.jpg" alt="Generic placeholder image" style="width:100px; border: solid 3px rgba(255, 255, 255, 0.3);">
+              <div class="media-body">
+                <h6 class="my-0 text-white d-block">ُPopular Hotel In Amman</h6>
+                <small>W Amman</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class=" card-parent col-sm-12 col-md-6 col-lg-4 ">
+        <div class="card text-white card-imge">
+          <div class="overlay"></div>
+        
+    
+          <div class="card-img-overlay">
+            <h4 class="card-title mt-4 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+            <small><i class="far fa-clock"></i> October 15, 2020</small>
+              <div class="media">
+                <img class="mr-3 rounded-circle" src="img/card.jpg" alt="Generic placeholder image" style="width:100px; border: solid 3px rgba(255, 255, 255, 0.3);">
+                <div class="media-body">
+                  <h6 class="my-0 text-white d-block">ُPopular Hotel In Amman</h6>
+                  <small>W Amman</small>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+  
+      
+    </div>
+  </div>
+</section>
+<hr class="my-4">
+<!-- /card overlay -->
+
+
+
+<section class="container light"> <!-- postcards news -->
+  <div class="container py-2">
+    <div class="h1 text-center  title" id="pageHeaderTitle" style="font-size: 30px;">Jordan NEWS</div>
+
+    <article class="postcard d-flex light blue"> <!-- 1st card -->
+      <a class="postcard__img_link" href="#">
+        <img class="postcard__img" src="img/card2.jpg" alt="Image Title">
+      </a>
+      <div class="postcard__text t-dark">
+        <h1 class="postcard__title blue"><a href="#">Podcast Title</a></h1>
+        <div class="postcard__subtitle small">
+          <time datetime="2020-05-25 12:00:00">
+            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+          </time>
+        </div>
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+          asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+          accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+          iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+        <ul class="postcard__tagbox">
+          <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+          <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+          <li class="tag__item play blue">
+            <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+          </li>
+        </ul>
+      </div>
+    </article> <!-- /1st card -->
+    <article class="postcard d-flex light red"> <!-- 2nd card -->
+      <a class="postcard__img_link" href="#">
+        <img class="postcard__img" src="img/card3.jpg" alt="Image Title">
+      </a>
+      <div class="postcard__text t-dark">
+        <h1 class="postcard__title red"><a href="#">Podcast Title</a></h1>
+        <div class="postcard__subtitle small">
+          <time datetime="2020-05-25 12:00:00">
+            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+          </time>
+        </div>
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+          asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+          accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+          iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+        <ul class="postcard__tagbox">
+          <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+          <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+          <li class="tag__item play red">
+            <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+          </li>
+        </ul>
+      </div>
+    </article> <!-- /2nd card -->
+    <article class="postcard d-flex  light green"> <!-- 3rd card -->
+      <a class="postcard__img_link" href="#">
+        <img class="postcard__img" src="img/card4.jpg" alt="Image Title">
+      </a>
+      <div class="postcard__text t-dark">
+        <h1 class="postcard__title green"><a href="#">Podcast Title</a></h1>
+        <div class="postcard__subtitle small">
+          <time datetime="2020-05-25 12:00:00">
+            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+          </time>
+        </div>
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+          asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+          accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+          iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+        <ul class="postcard__tagbox">
+          <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+          <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+          <li class="tag__item play green">
+            <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+          </li>
+        </ul>
+      </div>
+    </article> <!-- /3rd card -->
+    <article class="postcard d-flex light yellow "> <!-- 4th card -->
+      <a class="postcard__img_link" href="#">
+        <img class="postcard__img" src="img/card6.jpg" alt="Image Title">
+      </a>
+      <div class="postcard__text t-dark">
+        <h1 class="postcard__title yellow"><a href="#">Podcast Title</a></h1>
+        <div class="postcard__subtitle small">
+          <time datetime="2020-05-25 12:00:00">
+            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+          </time>
+        </div>
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+          asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+          accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+          iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+        <ul class="postcard__tagbox">
+          <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+          <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+          <li class="tag__item play yellow">
+            <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+          </li>
+        </ul>
+      </div>
+    </article> <!-- /4th card -->
+  </div> <!-- /container -->
+</section>
+
+<h2 class="text-center text-light title" style="font-size: 30px;">Join Us</h2>
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
+      <div class="card-body text-dark d-flex flex-column text-center">
+        <h3 class="card-title mb-4">Subscribe Now
+        </h3>
+        <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="img/twetter.jpg" type="image" alt="icon">
+        <a href="#" target="_blank" class="card-link h4 text-dark  ">Go to link</a>
+      </div>
+    </div>
+    <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
+      <div class="card-body text-dark d-flex flex-column text-center">
+        <h3 class="card-title mb-4">Follow
+        </h3>
+        <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="img/whats.jpg" type="image" alt="icon">
+        <a href="" target="_blank" class="card-link h4 text-dark ">Go to link</a>
+      </div>
+    </div>
+    <div class="card m-3 bg-light " style="width: 250px;  box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+      <div class="card-body text-dark d-flex flex-column text-center">
+        <h3 class="card-title mb-4">Like the page
+        </h3>
+        <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="img/in.jpg" type="image" alt="icon">
+        <a href="" target="_blank" class="card-link h4 text-dark ">Go to link</a>
+      </div>
+    </div>
+    <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+      <div class="card-body text-dark d-flex flex-column text-center">
+        <h3 class="card-title mb-4">watch vedios
+        </h3>
+        <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="img/insta.jpg" type="image" alt="icon">
+        <a href="" target="_blank" class="card-link h4 text-dark ">Go to link</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class=" text-light pb-5 bg-dark">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <hr class=" border-top border-3 border-light my-3">
+        <h5><img src="img/logo.jpg" alt="good pic" class="logoicon rounded-circle">&nbsp; Good Company</h5>
+        <hr class="border-top border-3 border-light my-3">
+        <address>
+          <p>Tel : 000-000-000</p>
+          <p>Address : JORDAN</p>
+          <p>Fax : 000-000-000</p>
+        </address>
+      </div>
+      <div class="col-md-4">
+        <hr class="border-top border-3 border-light my-3">
+        <h5><img src="img/logo.jpg" alt="good pic" class="logoicon rounded-circle ">&nbsp; Important links</h5>
+        <hr class="border-top border-3 border-light my-3">
+        <p><a href="#">Visit Us</a></p>
+        <p><a href="#">Take alook</a></p>
+        <p><a href="#">Your health is more important</a></p>
+      </div>
+      <div class="col-md-4">
+        <hr class="border-top border-3 border-light my-3">
+        <h5><img src="img/logo.jpg" alt="good pic" class="logoicon rounded-circle">&nbsp; Vision</h5>
+        <hr class="border-top border-3 border-light my-3">
+        <p>Serveices for all </p>
+        <p>Provide best serveices</p>
+        <p>you will be better than before</p>
+      </div>
+    </div>
+  </div>
+  <hr class="border-top border-3 border-light my-3">
+  <span class="text-center d-block title">Copyright © 2023 Alaa Abd Alnabi, Good Company. All
+    rights</span>
+  <hr class="border-top border-3 border-light my-3">
+  <!-- /footer -->
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
